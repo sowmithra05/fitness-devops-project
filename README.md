@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Fitness Tracker Application
 
 A full-stack fitness tracking web application built with React, Node.js, Express, and MongoDB.
@@ -40,3 +41,6 @@ A full-stack fitness tracking web application built with React, Node.js, Express
  
    cd backend
    npm install
+=======
+# fitness-devops-project
+>>>>>>> 0c7eea473676bd5e269d525c006b64903bd04ddb
