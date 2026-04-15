@@ -4,7 +4,13 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git 'https://github.com/sowmithra05/fitness-devops-project.git'
+                git branch: 'main', url: 'https://github.com/sowmithra05/fitness-devops-project.git'
+            }
+        }
+
+        stage('Check Docker') {
+            steps {
+                sh 'docker --version'
             }
         }
 
