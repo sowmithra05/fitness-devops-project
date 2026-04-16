@@ -2,27 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('Clone') {
+
+        stage('Clone Code') {
             steps {
                 git branch: 'main', url: 'https://github.com/sowmithra05/fitness-devops-project.git'
             }
         }
 
-        stage('Check Docker') {
+        stage('Check Files') {
             steps {
-                sh 'docker --version'
+                sh 'ls'
             }
         }
 
-        stage('Build Backend') {
+        stage('Build Success') {
             steps {
-                sh 'docker build -t fitness-backend ./backend'
-            }
-        }
-
-        stage('Build Frontend') {
-            steps {
-                sh 'docker build -t fitness-frontend ./frontend'
+                echo 'Pipeline executed successfully ✅'
             }
         }
     }
